@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		.topnav .icon {
+		  display: none;
+		}
+	</style>
+	<div class="topnav" id="myTopnav">
+		<a onclick="getProfile();" href="#">Profile</a>
+		<a onclick="getPosts();" href="#">Posts</a>
+	</div>
+	<div class="container" id="post">
+		<div class="row">
+			<div class="col-xl-12" align="center">
+				<span style="font-size: 25px;">Posts</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 text-center" id="posts"></div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="container" id="profile">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 col-sm-10">
+				<div class="row">
+					<img src="" id="userPicture" style="width: 20%; height: 20%; border-radius: 50%; margin: 5px;" align="center">
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-4">Name : </div>
+					<div class="col-md-5 col-sm-5 col-xs-6">
+						<span id="userName"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-4">Birthday : </div>
+					<div class="col-md-5 col-sm-5 col-xs-6">
+						<span id="userBday"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-4">Gender : </div>
+					<div class="col-md-5 col-sm-5 col-xs-6">
+						<span id="userGender"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-4">Hometown : </div>
+					<div class="col-md-5 col-sm-5 col-xs-6">
+						<span id="userHometown"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</body>
+</html>
